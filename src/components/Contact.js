@@ -23,15 +23,15 @@ export default function Contact() {
 
     try {
       const result = await emailjs.send(
-        "service_lgj5jir", // Replace with your EmailJS Service ID
-        "template_4w7tiek", // Replace with your EmailJS Template ID
+        "service_xdxkqzq", // Replace with your EmailJS Service ID
+        "template_0kqxh9r", // Replace with your EmailJS Template ID
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
           year: new Date().getFullYear(),
         },
-        "O0ketBSBwFgXx7y68" // Replace this with your actual Public Key
+        "rZRU3cx2QhhmSfDbs" // Replace this with your actual Public Key
       );
 
       if (result.text === "OK") {
@@ -130,10 +130,10 @@ export default function Contact() {
           <p className="text-lg">
             N&apos;hésitez pas à me contacter par email à {" "}
             <a
-              href="mailto:mariem.khadhraoui.dev@gmail.com"
+              href="mailto:mariem.khadhraoui@esprit.tn"
               className="text-blue-600 hover:text-green-500 transition"
             >
-              mariem.khadhraoui.dev@gmail.com
+            mariem.khadhraoui@esprit.tn
             </a>
           </p>
           <p className="text-lg mt-2">
