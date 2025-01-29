@@ -47,7 +47,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 px-8 bg-gradient-to-b from-gray-100 to-white text-gray-900 relative overflow-hidden"
+      className="py-20 px-8 bg-gradient-to-b from-gray-100 to-white text-gray-900 relative overflow-hidden" 
     >
       {/* Background Decorations */}
       <div className="absolute inset-0 z-0 opacity-10">
@@ -127,19 +127,20 @@ export default function Contact() {
 
         {/* Contact Information */}
         <div className="mt-12 text-center">
-          <p className="text-lg">
-            N&apos;hésitez pas à me contacter par email à {" "}
-            <a
-              href="mailto:mariem.khadhraoui@esprit.tn"
-              className="text-blue-600 hover:text-green-500 transition"
-            >
-            mariem.khadhraoui@esprit.tn
-            </a>
-          </p>
-          <p className="text-lg mt-2">
-            Je suis toujours ravie d&apos;échanger sur de nouvelles opportunités ou projets !
-          </p>
-        </div>
+  <p className="text-lg">
+    Feel free to contact me via email at{" "}
+    <a
+      href="mailto:mariem.khadhraoui@esprit.tn"
+      className="text-blue-600 hover:text-green-500 transition"
+    >
+      mariem.khadhraoui@esprit.tn
+    </a>
+  </p>
+  <p className="text-lg mt-2">
+    I&apos;m always happy to discuss new opportunities or projects!
+  </p>
+</div>
+
       </div>
     </section>
   );

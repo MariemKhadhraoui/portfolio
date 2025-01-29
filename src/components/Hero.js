@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 export default function Hero() {
   return (
     <section
-      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-center relative overflow-hidden mx-0 p-0"
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-900 text-center relative overflow-hidden mx-0 p-0"
       style={{
         width: "100vw",
         marginLeft: "calc(50% - 50vw)",
@@ -15,15 +15,16 @@ export default function Hero() {
     >
       {/* Background Elements */}
       <div className="absolute inset-0 z-0 opacity-20 overflow-hidden">
-        <div className="w-72 h-72 bg-blue-300 rounded-full blur-3xl absolute top-10 left-20"></div>
-        <div className="w-96 h-96 bg-teal-300 rounded-full blur-2xl absolute top-20 right-20"></div>
+        <div className="w-72 h-72 bg-blue-800 rounded-full blur-3xl absolute top-10 left-20"></div>
+        <div className="w-96 h-96 bg-teal-800 rounded-full blur-2xl absolute top-20 right-20"></div>
       </div>
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center w-full max-w-3xl px-4">
-        <h1 className="text-5xl font-extrabold bg-gradient-to-r from-blue-400 via-teal-500 to-green-500 text-transparent bg-clip-text mb-4">
-          Hello 👋, I&apos;m Mariem Khadhraoui
-        </h1>
+      <h1 className="text-5xl font-extrabold bg-gradient-to-r from-blue-400 via-teal-500 to-green-500 text-transparent bg-clip-text mb-4">
+  Hello <span className="text-yellow-400">👋</span>, I&apos;m Mariem Khadhraoui
+</h1>
+
 
         <p className="text-2xl text-gray-300 mb-2">
           Software Engineer | Web Development Enthusiast | Full Stack Developer | {" "}

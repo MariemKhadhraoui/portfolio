@@ -1,7 +1,10 @@
-import { FaReact, FaJava, FaPython, FaPhp, FaNodeJs, FaDatabase, FaDocker, FaLinux, FaLaravel, FaGithub, FaWindows } from "react-icons/fa";
+import { FaReact, FaJava, FaPython, FaPhp, FaJs,FaCode, FaNodeJs, FaDatabase, FaDocker, FaLinux, FaLaravel, FaGithub, FaWindows } from "react-icons/fa";
 import { SiSpring, SiAngular,SiNextdotjs, SiTailwindcss, SiSymfony, SiPostgresql, SiMysql, SiMongodb, SiFlask, SiDjango, SiGrafana, SiJenkins, SiVagrant, SiSonarqube, SiDotnet, SiJira, SiTrello, SiSlack, SiOdoo, SiIntellijidea, SiEclipsejetty, SiApachenetbeanside } from "react-icons/si";
 
 export default function Skills() {
+
+
+
   const skills = [
     {
       category: "Programming Languages",
@@ -10,8 +13,8 @@ export default function Skills() {
         { name: "Python", icon: <FaPython className="text-yellow-500 text-5xl" aria-label="Python" /> },
         { name: "PHP", icon: <FaPhp className="text-indigo-500 text-5xl" aria-label="PHP" /> },
         { name: "C++", icon: <FaGithub className="text-blue-500 text-5xl" aria-label="C++" /> },
-        { name: "C#", icon: <FaGithub className="text-green-500 text-5xl" aria-label="C#" /> },
-        { name: ".NET Core", icon: <SiDotnet className="text-purple-500 text-5xl" aria-label=".NET Core" /> },
+        { name: "JavaScript", icon: <FaJs className="text-yellow-500 text-5xl" aria-label="JavaScript" /> },
+        { name: "TypeScript", icon: <FaCode className="text-blue-500 text-5xl" aria-label="TypeScript" /> },        { name: ".NET Core", icon: <SiDotnet className="text-purple-500 text-5xl" aria-label=".NET Core" /> },
       ],
     },
     {
@@ -29,10 +32,8 @@ export default function Skills() {
       category: "Backend Frameworks",
       items: [
         { name: "Spring / Spring Boot", icon: <SiSpring className="text-green-500 text-5xl" aria-label="Spring Boot" /> },
-        { name: "Symfony", icon: <SiSymfony className="text-purple-500 text-5xl" aria-label="Symfony" /> },
         { name: "Laravel", icon: <FaLaravel className="text-red-600 text-5xl" aria-label="Laravel" /> },
         { name: "Django", icon: <SiDjango className="text-green-700 text-5xl" aria-label="Django" /> },
-        { name: "Flask", icon: <SiFlask className="text-gray-500 text-5xl" aria-label="Flask" /> },
         { name: "Node.js", icon: <FaNodeJs className="text-green-400 text-5xl" aria-label="Node.js" /> },
       ],
     },
@@ -61,7 +62,6 @@ export default function Skills() {
         { name: "Jira", icon: <SiJira className="text-blue-600 text-5xl" aria-label="Jira" /> },
         { name: "Trello", icon: <SiTrello className="text-blue-400 text-5xl" aria-label="Trello" /> },
         { name: "Slack", icon: <SiSlack className="text-purple-500 text-5xl" aria-label="Slack" /> },
-        { name: "Odoo", icon: <SiOdoo className="text-pink-500 text-5xl" aria-label="Odoo" /> },
       ],
     },
     {
@@ -74,13 +74,17 @@ export default function Skills() {
         { name: "Visual Studio", icon: <FaWindows className="text-blue-500 text-5xl" aria-label="Visual Studio" /> },
         { name: "WampServer", icon: <FaWindows className="text-red-500 text-5xl" aria-label="WampServer" /> },
         { name: "PgAdmin", icon: <SiPostgresql className="text-indigo-500 text-5xl" aria-label="PgAdmin" /> },
-        { name: "TablePlus", icon: <SiPostgresql className="text-teal-500 text-5xl" aria-label="TablePlus" /> },
       ],
     },
   ];
 
   return (
     <div className="skills py-12 px-4 bg-gray-100">
+      <h2 className="text-5xl font-extrabold text-center bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text mb-10">
+  Skills
+</h2>
+
+
       {skills.map((skillCategory, index) => (
         <section id= "skills" key={index} className="mb-16" >
           <h3 className="text-3xl font-bold text-center text-blue-600 mb-8">{skillCategory.category}</h3>
